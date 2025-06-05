@@ -10,10 +10,10 @@ public class WordCounter {
 
     //Konstruktor
     public WordCounter() {
-        this.lineCount = 0;
-        this.characterCount = 0;
-        this.wordCount = 0;
-        this.longestWord = "";
+        lineCount = 0;
+        characterCount = 0;
+        wordCount = 0;
+        longestWord = "";
     }
 
     //metod som räknar rader, tecken, antal ord och uppdaterar det längsta ordet som användaren matat in

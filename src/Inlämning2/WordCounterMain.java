@@ -12,14 +12,11 @@ public class WordCounterMain {
         WordCounter words = new WordCounter();
 
         System.out.println("Skriv några ord/meningar eller ordet STOP för att avsluta programmet: ");
+        String input = scan.nextLine();
         //programmet körs i en loop tills användaren skriver ordet "STOP"
-        while (true) {
-            String input = scan.nextLine();
+        while (!words.stopMain(input)) {
+            input = scan.nextLine();
 
-            //kontrollerar ifall användaren vill avsluta programmet
-            if (words.stopMain(input)) {
-                break;
-            }
             //skickar input till metoden för att göra alla uträkningar
             words.checkWords(input);
 
